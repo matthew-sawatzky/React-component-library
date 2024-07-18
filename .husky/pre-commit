@@ -1,0 +1,11 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run Prettier
+npx prettier --write .
+
+# Run ESLint
+npx eslint . --fix
+
+# Run tests in non-watch mode
+CI=true npm test
