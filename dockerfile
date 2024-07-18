@@ -2,7 +2,7 @@
 FROM node:14
 
 # Set the working directory
-WORKDIR /lastName_firstName_ui_garden_build_checks
+WORKDIR /sawatzky_matthew_ui_garden_build_checks
 
 # Copy package.json and package-lock.json to leverage Docker cache
 COPY package*.json ./
